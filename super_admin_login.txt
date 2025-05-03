@@ -1,0 +1,3 @@
+<-- mengakses password dan email admin website -->
+email = admin@gmail.com
+password = 123123123

@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+[data-carousel-slide-to] {
+    background-color: rgb(22 101 52) !important; /* bg-green-800 */
+}
+
+  html, body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  main {
+    flex: 1;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  /* Menampilkan tombol di kanan dan kiri slider */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #22c55e; /* Warna tombol navigasi */
+    background-color: rgba(255, 255, 255, 0.8); /* Tambahkan background */
+    border-radius: 50%; /* Tombol bulat */
+    width: 40px; /* Ukuran tombol */
+    height: 40px; /* Ukuran tombol */
+    position: absolute;
+    top: 50%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Perbaiki posisi vertikal */
+    z-index: 10; /* Pastikan tombol ada di atas konten lain */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol kanan */
+.swiper-button-next {
+    right: 10px;
+}
+
+/* Tombol kiri */
+.swiper-button-prev {
+    left: 10px;
+}
+
+/* Efek hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #15803d; /* Warna hijau lebih gelap */
+}
+
+  
